@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main(){
+	
+	int X=1, soma= 0, i;
+	
+	while(X != 0){
+		
+		scanf("%i", &X);
+		if(X > 0){
+		i=0;
+		soma=0;
+		while(i != 5){
+			if(X%2 != 1){
+				soma=soma+X;
+				i++;
+				X++;
+			}
+			else{
+				X++;
+			}
+		}
+		printf("%i\n", soma);
+		}
+		if(X < 0){
+		i=0;
+		soma=0;
+		while(i != 5){
+			if(X%2 == 0){
+				soma=soma+X;
+				i++;
+				X++;
+				}
+			else{
+				X++;
+			}
+		}
+		printf("%i\n", soma);
+		}
+	}
+return 0;
+}
